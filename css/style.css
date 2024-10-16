@@ -1,80 +1,95 @@
-/* General reset to ensure consistent styling */
+/* General reset for consistency */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body and background */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  background-color: #f4f4f9;
+  font-family: 'Merriweather', serif;
+  background-color: #1a1a2e;
+  color: #f4f4f9;
+  line-height: 1.6;
   padding: 20px;
 }
 
-/* Navigation bar */
-nav {
-  background-color: #007bff;
-  padding: 10px 0;
+/* Header styling */
+header {
+  text-align: center;
+  padding: 40px 0;
 }
 
+header h1 {
+  font-size: 3em;
+  color: #e94560;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #a8a8d2;
+}
+
+/* Navigation styling */
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px;
 }
 
 nav ul li {
+  display: inline-block;
   margin: 0 15px;
 }
 
 nav ul li a {
-  color: #fff;
   text-decoration: none;
+  color: #f4f4f9;
   font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid #fff;
+  color: #e94560;
 }
 
-/* Headings and text */
-h1 {
-  font-size: 3em;
-  color: #007bff;
-  text-align: center;
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #232344;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+main h2 {
+  color: #f4f4f9;
   margin-bottom: 20px;
+  font-size: 2.2em;
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #555;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-/* Buttons */
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
+main p {
+  font-size: 1.1em;
+  color: #c0c0e1;
+  margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
-  background-color: #007bff;
-  color: white;
+  padding: 20px 0;
+  color: #a8a8d2;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #e94560;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #f4f4f9;
 }
