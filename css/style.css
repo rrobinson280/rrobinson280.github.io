@@ -1,25 +1,80 @@
-/* CSS Styles */
-
-nav ul {
-  list-style-type: none;
+/* General reset to ensure consistent styling */
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  float: left;
+  margin: 0 15px;
 }
 
 nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: #fff;
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 nav ul li a:hover {
-  background-color: #111;
+  border-bottom: 2px solid #fff;
+}
+
+/* Headings and text */
+h1 {
+  font-size: 3em;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+  background-color: #007bff;
+  color: white;
 }
