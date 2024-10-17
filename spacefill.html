@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title></title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='spacefill.css' rel='stylesheet' type='text/css' /> 
+<meta content='spacefill.tex' name='src' /> 
+</head><body>
+  <div class='maketitle'>
+  <h2 class='titleHead'>
+A VISUAL INTUITION FOR SPACE FILLING CURVES
+  </h2>
+  <div class='authors'><span class='author'>
+<span class='cmr-10'>RYAN ROBINSON</span>
+  </span></div>
+<div class='submaketitle'>
+</div>
+  </div><p>A space-filling curve can be thought of as a continuous mapping from a lower
+dimensional space to a higher one. This article attempts to provide visual intuition for
+this mapping as well as rigorous proof.
+</p><!-- l. 22 --><p class='indent'>  Let <span class='cmmi-12'>I </span>= [0<span class='cmmi-12'>, </span>1]. There exists a continuous map <span class='cmmi-12'>f </span>: <span class='cmmi-12'>I </span><span class='cmsy-10x-x-120'>→ </span><span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> whose image fills up the
+entire square <span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup>.
+</p>
+  <figure class='figure'> 
+
+                                                                                
+
+                                                                                
+                                                                                
+
+                                                                                
+<!-- l. 26 --><p class='noindent'><img alt='f
+ 0
+' src='spacefill0x.svg' />
+</p>
+<figcaption class='caption'><span class='id'>Figure 1: </span><span class='content'>Begin with the closed interval <span class='cmmi-12'>I </span>= [0<span class='cmmi-12'>, </span>1] and the unit square [0<span class='cmmi-12'>, </span>1]<sup><span class='cmr-8'>2</span></sup>. Then,
+let <span class='cmmi-12'>f</span><sub><span class='cmr-8'>0</span></sub> map <span class='cmmi-12'>I </span>to the triangular path shown on the right.</span></figcaption><!-- tex4ht:label?: x1-21  -->
+                                                                                
+
+                                                                                
+  </figure>
+  <figure class='figure'> 
+
+                                                                                
+
+                                                                                
+                                                                                
+
+                                                                                
+<!-- l. 41 --><p class='noindent'><img alt='f
+ 1
+' src='spacefill1x.svg' />
+</p>
+<figcaption class='caption'><span class='id'>Figure 2: </span><span class='content'><span class='cmmi-12'>f</span><sub><span class='cmr-8'>1</span></sub>  is the operation of changing each individual path in <span class='cmmi-12'>f</span><sub><span class='cmr-8'>0</span></sub>  into four
+individual paths or equivalently two triangular paths.</span></figcaption><!-- tex4ht:label?: x1-32  -->
+                                                                                
+
+                                                                                
+  </figure>
+  <figure class='figure'> 
+
+                                                                                
+
+                                                                                
+                                                                                
+
+                                                                                
+<!-- l. 63 --><p class='noindent'><img alt='f
+ 2
+' src='spacefill2x.svg' />
+</p>
+<figcaption class='caption'><span class='id'>Figure 3: </span><span class='content'>Operation applied again.</span></figcaption><!-- tex4ht:label?: x1-43  -->
+                                                                                
+
+                                                                                
+  </figure>
+  <figure class='figure'> 
+
+                                                                                
+
+                                                                                
+                                                                                
+
+                                                                                
+<!-- l. 122 --><p class='noindent'><img alt='f
+ 3
+' src='spacefill3x.svg' />
+</p>
+<figcaption class='caption'><span class='id'>Figure 4: </span><span class='content'>Operation applied again</span></figcaption><!-- tex4ht:label?: x1-54  -->
+                                                                                
+
+                                                                                
+  </figure>
+  <figure class='figure'> 
+
+                                                                                
+
+                                                                                
+                                                                                
+
+                                                                                
+<!-- l. 321 --><p class='noindent'><img alt='f
+ 4
+' src='spacefill4x.svg' />
+</p>
+<figcaption class='caption'><span class='id'>Figure 5: </span><span class='content'>This operation can be performed indefinitely.</span></figcaption><!-- tex4ht:label?: x1-65  -->
+                                                                                
+
+                                                                                
+  </figure>
+  <figure class='figure'> 
+
+                                                                                
+
+                                                                                
+                                                                                
+
+                                                                                
+<!-- l. 1074 --><p class='noindent'><img alt='f
+' src='spacefill5x.svg' />
+</p>
+<figcaption class='caption'><span class='id'>Figure 6: </span><span class='content'>Once the operation has been performed for <span class='cmmi-12'>n </span>times as <span class='cmmi-12'>n </span><span class='cmsy-10x-x-120'>→∞ </span>the unit
+square will be filled.</span></figcaption><!-- tex4ht:label?: x1-76  -->
+                                                                                
+
+                                                                                
+  </figure>
+  <h3 class='sectionHead' id='useful-theorems'><a id='x1-1000'></a>Useful Theorems</h3>
+<!-- l. 1091 --><p class='noindent'><span class='cmbx-12'>Theorem 1 </span>Let <span class='cmmi-12'>X </span>be a topological space and let (<span class='cmmi-12'>Y,d</span>) be a metric space. The set
+<span class='cmsy-10x-x-120'>𝒞</span>(<span class='cmmi-12'>X,Y </span>) of continuous functions is closed in <span class='cmmi-12'>Y</span> <sup><span class='cmmi-8'>X</span></sup> under the uniform metric. So is the set
+<span class='cmsy-10x-x-120'>ℬ</span>(<span class='cmmi-12'>X,Y </span>) of bounded functions. Therefore, if <span class='cmmi-12'>Y </span>is complete, these spaces are complete in
+the uniform metric.
+</p><!-- l. 1095 --><p class='indent'>  <span class='cmbx-12'>Uniform Limit Theorem. </span>Let <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub> : <span class='cmmi-12'>X </span><span class='cmsy-10x-x-120'>→ </span><span class='cmmi-12'>Y </span>be a sequence of continuous functions
+from the topological space <span class='cmmi-12'>X </span>to the metric space <span class='cmmi-12'>Y </span>. If (<span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub>) converges uniformly to <span class='cmmi-12'>f</span>,
+then <span class='cmmi-12'>f </span>is continuous.
+</p>
+  <h3 class='sectionHead' id='proof'><a id='x1-2000'></a>Proof</h3>
+  <div class='proof'>
+<!-- l. 1100 --><p class='indent'>  <span class='head'>
+<span class='cmti-12'>Proof.</span> </span>Let <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub> : <span class='cmmi-12'>I </span><span class='cmsy-10x-x-120'>→ </span><span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> be defined by the sequence of functions shown above and
+<span class='cmmi-12'>I </span>= [0<span class='cmmi-12'>, </span>1]. The first step will be to show that (<span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub>) is a Cauchy sequence since then
+we can say that <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub> converges to a continuous function. After that we will show for
+any point <span class='cmmi-12'>x </span><span class='cmsy-10x-x-120'>∈ </span><span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> then <span class='cmmi-12'>x </span><span class='cmsy-10x-x-120'>∈ </span><span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>).
+</p><!-- l. 1102 --><p class='indent'>  First, consider the square metric on <span class='msbm-10x-x-120'>ℝ</span><sup><span class='cmr-8'>2</span></sup>,
+</p>
+  <div class='math-display'>
+<img alt='d(x,y) = max {|x1 − y1|, |x2 − y2|}.
+' class='math-display' src='spacefill6x.svg' /></div>
+<!-- l. 1106 --><p class='indent'>  Then, let <span class='cmmi-12'>ρ </span>be the sup metric corresponding to the square metric on the space
+of continuous maps <span class='cmsy-10x-x-120'>𝒞</span>(<span class='cmmi-12'>I,I</span><sup><span class='cmr-8'>2</span></sup>),
+                                                                                
+
+                                                                                
+</p>
+  <div class='math-display'>
+<img alt='ρ(f,g) = sup {d(f(t),g(t))|t ∈ I }.
+' class='math-display' src='spacefill7x.svg' /></div>
+<!-- l. 1111 --><p class='indent'>  So,  we  now  show  that  (<span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub>)  is  Cauchy  under  <span class='cmmi-12'>ρ</span>.  Each  operation  makes  an
+individual path in <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub> to lie in a square of length 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span><span class='cmr-8'>+1</span></sup>. To turn <span class='cmmi-12'>f</span><sub>
+<span class='cmmi-8'>n</span></sub> into <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span><span class='cmr-8'>+1</span></sub> we
+replace each path by four triangular paths that lie in the same 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span></sup> area. Then,
+the distance between <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub>(<span class='cmmi-12'>t</span>) and <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span><span class='cmr-8'>+1</span></sub>(<span class='cmmi-12'>t</span>) is at most 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span></sup>. Then <span class='cmmi-12'>ρ</span>(<span class='cmmi-12'>f</span><sub>
+<span class='cmmi-8'>n</span></sub><span class='cmmi-12'>,f</span><sub><span class='cmmi-8'>n</span><span class='cmr-8'>+1</span></sub>) <span class='cmsy-10x-x-120'>≤ </span>1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span></sup>
+and (<span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub>) is a Cauchy sequence since
+</p>
+  <div class='math-display'>
+<img alt='ρ (fn, fn+m ) ≤ 1 ∕2n + 1∕2n+1 + ⋅⋅⋅ + 1∕2n+m − 1 &lt; 2∕2n
+' class='math-display' src='spacefill8x.svg' /></div>
+<!-- l. 1115 --><p class='indent'>  for all <span class='cmmi-12'>n </span>and <span class='cmmi-12'>m</span>.
+</p><!-- l. 1117 --><p class='indent'>  Since <span class='msbm-10x-x-120'>ℝ</span><sup><span class='cmr-8'>2</span></sup>  is complete, every closed subset must also be complete. Then <span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup>  is
+complete and <span class='cmsy-10x-x-120'>𝒞</span>(<span class='cmmi-12'>I,I</span><sup><span class='cmr-8'>2</span></sup>) must be complete under the uniform metric by Theorem 1
+and therefore is complete under the sup metric.
+</p><!-- l. 1119 --><p class='indent'>  Since <span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub>  : <span class='cmmi-12'>I </span><span class='cmsy-10x-x-120'>→ </span><span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup>  is a Cauchy sequence on a complete space this sequence
+converges uniformly to <span class='cmmi-12'>f </span>and is therefore continuous by the uniform limit theorem.
+So, we have shown that <span class='cmmi-12'>f  </span>exists and is continuous. Lastly, we show <span class='cmmi-12'>f  </span>is also
+surjective.
+</p><!-- l. 1121 --><p class='indent'>  So, consider a point <span class='cmmi-12'>x </span><span class='cmsy-10x-x-120'>∈ </span><span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup>, we must show that this point belongs to <span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>). Each
+<span class='cmmi-12'>f</span><sub><span class='cmmi-8'>n</span></sub> comes within a distance of 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span></sup> of <span class='cmmi-12'>x </span>since <span class='cmmi-12'>x </span>must be in one of the squares that
+make up <span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> belonging to a triangular path.
+</p>
+                                                                                
+
+                                                                                
+  <figure class='figure'> 
+ <img alt='n
+1∕2 ' src='spacefill9x.svg' />
+<figcaption class='caption'><span class='id'>Figure 7: </span><span class='content'>Every point in <span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> will land in a square of length 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span></sup> shown above. Thus,
+any point in <span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> will be within a distance of 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>n</span></sup> of <span class='cmmi-12'>f</span><sub>
+<span class='cmmi-8'>n</span></sub>.</span></figcaption><!-- tex4ht:label?: x1-20017  -->
+  </figure>
+<!-- l. 1135 --><p class='indent'>  So, let <span class='cmmi-12'>𝜖 &gt; </span>0 and choose <span class='cmmi-12'>N </span>such that
+</p>
+  <div class='math-display'>
+<img alt='ρ(fN ,f) &lt; 𝜖∕2 and 1 ∕2N &lt; 𝜖∕2.
+' class='math-display' src='spacefill10x.svg' /></div>
+<!-- l. 1139 --><p class='indent'>  As peviously argued, there will be a point <span class='cmmi-12'>t</span><sub><span class='cmr-8'>0</span></sub> <span class='cmsy-10x-x-120'>∈ </span><span class='cmmi-12'>I </span>where the distance between <span class='cmmi-12'>x </span>and
+<span class='cmmi-12'>f</span><sub><span class='cmmi-8'>N</span></sub>(<span class='cmmi-12'>t</span><sub><span class='cmr-8'>0</span></sub>) is less than 1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>N</span></sup>. that is <span class='cmmi-12'>d</span>(<span class='cmmi-12'>x,f</span><sub>
+<span class='cmmi-8'>N</span></sub>(<span class='cmmi-12'>t</span><sub><span class='cmr-8'>0</span></sub>)) <span class='cmsy-10x-x-120'>≤ </span>1<span class='cmmi-12'>∕</span>2<sup><span class='cmmi-8'>N</span></sup>. Then, by how we have chosen <span class='cmmi-12'>N </span>it
+follows that
+</p><table class='align-star'>
+                                 <tr><td class='align-odd'><span class='cmmi-12'>d</span>(<span class='cmmi-12'>x,f</span>(<span class='cmmi-12'>t</span><sub><span class='cmr-8'>0</span></sub>)) <span class='cmmi-12'>&lt; 𝜖,</span></td>                                 <td class='align-even'></td>                                 <td class='align-label'></td></tr></table>
+                                                                                
+
+                                                                                
+<!-- l. 1143 --><p class='indent'>  so <span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>) will intersect the <span class='cmmi-12'>𝜖</span>-neighborhood of <span class='cmmi-12'>x</span>.
+</p><!-- l. 1145 --><p class='indent'>  Therefore, we have shown that <span class='cmmi-12'>x </span><span class='cmsy-10x-x-120'>∈</span><span class='overline'><span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>)</span> since <span class='cmmi-12'>I </span>is compact and <span class='cmmi-12'>f </span>is continuous <span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>)
+must also be compact. Then <span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>) must be closed so <span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>) =<span class='overline'> <span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>)</span> and <span class='cmmi-12'>x </span><span class='cmsy-10x-x-120'>∈ </span><span class='cmmi-12'>f</span>(<span class='cmmi-12'>I</span>).
+Therefore, we have shown that <span class='cmmi-12'>f </span>is is a continuous map from <span class='cmmi-12'>I </span>to <span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup> which fills
+<span class='cmmi-12'>I</span><sup><span class='cmr-8'>2</span></sup>.
+  <span class='qed'><span class='msam-10x-x-120'>□</span></span>
+</p>
+  </div>
+   
+</body> 
+</html>
